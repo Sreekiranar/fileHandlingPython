@@ -1,0 +1,87 @@
+Defence Science Journal, Vol. 66, No. 2, March 2016, pp.122-129, DOI : 10.14429/dsj.66.8972
+© 2016, DESIDOC
+Multi-object tracking in aerial Image Sequences using aerial tracking learning and detection algorithm
+Vindhya P. Malagi’, Ramesh Babu D.R., and Krishnan Rangarajan
+Computer Science and Engineering Department, Dayananda Sagar College of Engineering, Bengaluru -
+560 078, India
+'E-mail: vindhyapm@gmail.com
+Abstract
+Vison based tracking in aerial images has its own significance in the areas of both civil and defense
+applications. A novel algorithm called aerial tracking learning detection which works on the basis of the popular
+tracking learning detection algorithm to effectively track single and multiple objects in aerial images is proposed in
+this study. Tracking learning detection (TLD) considers both appearance and motion features for tracking. It can
+handle occlusion to certain extent, and can work well on long duration video sequences. However, when objects are
+tracked in aerial images taken from platforms like unmanned air vehicle, the problems of frequent pose change, scale and illumination variations arise adding to low resolution, noise and jitter introduced by motion of the camera.
+The proposed algorithm incorporates compensation for the camera movement, algorithmic modifications in
+combining appearance and motion cues for detection and tracking of multiple objects and enhancements in the form
+of inter object distance measure for improved performance of the tracker when there are many identical objects in
+proximity. This algorithm has been tested on a large number of aerial sequences including benchmark videos, TLD
+dataset and many classified unmanned air vehicle sequences and has shown better performance in comparison to
+TLD.
+keywords: Aerial images, tracking, learning, detection, minimum distance cue, object tracking
+1. Introduction
+Vision system has become an integral part of military
+applications, as in autonomous vehicles, where vision sensors
+are deployed for missions like surveillance, tracking etc. In
+particular, autonomous operation of unmanned air vehicles
+(UAVs) has progressively developed in recent years wherein,
+vision-based navigation, guidance and control has been the
+most focused research interest for trajectory tracking, path
+planning, obstacle avoidance, target localisation, target
+recognition, border and ground surveillance.
+Table 1. Performance evaluation on aerial dataset
+measured using precision (P)/recall (R)/F-measure (F)
+ 
+   
+  Tracking without Tracking with
+Seguenge distance cue P/R/F | distance cue P/R/F
+   
+         
+ 
+ 
+ 
+0.90/0.90/0.90
+1833
+| 0.92/0.88/0.90
+0.94/0.94/0.94
+0.96/0.99/0.97
+UAV1
+UAV 2  
+ 
+   
+ 
+ 
+ 
+     
+ 
+‘ Traffic 1 156
+| 0.88/0.91/0.89
+0.96/0.98/0.97 ‘ Traffic 2 227
+| 0.85/0.90/0.87
+| 0.97/0.97/0.97
+Pedestrian 2
+338 0.93/0.95/0.94 1.00/1.00/1.00
+   
+Object tracking is a fundamental task in a wide range of
+military and civilian applications, namely surveillance, traffic
+monitoring and management, security and defense. In aerial
+imagery applications, the camera system is mounted on a
+moving aerial platform.
+ 
+ 
+2. Related Work
+  Initial study showed the existence of three main
+techniques for object tracking, namely, point based, kernel
+based and silhouette based tracking®. A system for tracking
+moving objects in aerial images sequences taken from a
+moving camera consists of motion compensation module,
+motion detection followed by the tracking module.
+3
+o M—
+A
+’Y’!“Z"'{Wg 2
+Loase s 028 :  
+ 
+ 
+Received 02 July 2015, revised 11 February 2016, online published 22
+March 2016
